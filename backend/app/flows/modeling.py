@@ -5,7 +5,7 @@ from typing import List
 
 import numpy as np
 import pandas as pd
-from prefect import flow, task
+from app.utils.prefect_compat import flow, task
 
 from app.core.config import get_settings
 from app.core.database import db_session
