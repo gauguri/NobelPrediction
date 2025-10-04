@@ -1,0 +1,9 @@
+[
+  {
+    "field": "Physics",
+    "hit_at_10": 0.62,
+    "auc_pr": 0.41,
+    "brier_score": 0.19,
+    "years_covered": [2000, 2020]
+  }
+]
