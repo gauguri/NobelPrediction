@@ -1,0 +1,50 @@
+[
+  {
+    "openalex_id": "A1",
+    "full_name": "Lene Hau",
+    "field": "Physics",
+    "affiliation": "Harvard University",
+    "country": "USA",
+    "headshot_url": "https://example.com/lene_hau.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 35000,
+      "h_index": 94,
+      "recent_trend": 0.12,
+      "seminal_score": 0.88,
+      "award_count": 5
+    }
+  },
+  {
+    "openalex_id": "A2",
+    "full_name": "Alain Aspect",
+    "field": "Physics",
+    "affiliation": "Institut d'Optique",
+    "country": "France",
+    "headshot_url": "https://example.com/alain_aspect.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 42000,
+      "h_index": 110,
+      "recent_trend": 0.08,
+      "seminal_score": 0.92,
+      "award_count": 6
+    }
+  },
+  {
+    "openalex_id": "A3",
+    "full_name": "Hiroshi Amano",
+    "field": "Physics",
+    "affiliation": "Nagoya University",
+    "country": "Japan",
+    "headshot_url": "https://example.com/hirosi_amano.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 28000,
+      "h_index": 80,
+      "recent_trend": 0.15,
+      "seminal_score": 0.75,
+      "award_count": 4
+    }
+  }
+]

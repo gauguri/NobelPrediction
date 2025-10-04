@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install Poetry
+        run: pip install poetry
+      - name: Install backend deps
+        run: poetry -C backend install
+      - name: Bootstrap seed data
+        run: |
+          poetry -C backend run python -c "from app.services.bootstrap import bootstrap_state; bootstrap_state()"
+          poetry -C backend run python -c "from app.services.training_service import TrainingService; s=TrainingService(); s.run_etl(); s.train_models()"
+      - name: Run tests
+        run: poetry -C backend run pytest
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: npm install
+        working-directory: frontend
+      - name: Build
+        run: npm run build
+        working-directory: frontend
