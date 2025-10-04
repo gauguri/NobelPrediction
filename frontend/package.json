@@ -1,0 +1,38 @@
+{
+  "name": "nobel-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .ts,.tsx",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@emotion/react": "11.11.4",
+    "@emotion/styled": "11.11.5",
+    "@mui/material": "5.15.13",
+    "axios": "1.6.7",
+    "plotly.js": "2.29.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-plotly.js": "2.6.0",
+    "react-router-dom": "6.22.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "6.4.2",
+    "@testing-library/react": "14.2.1",
+    "@types/node": "20.12.7",
+    "@types/react": "18.2.73",
+    "@types/react-dom": "18.2.22",
+    "@vitejs/plugin-react": "4.2.1",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-react": "7.34.1",
+    "prettier": "3.2.5",
+    "typescript": "5.4.3",
+    "vite": "5.1.6",
+    "vitest": "1.4.0"
+  }
+}

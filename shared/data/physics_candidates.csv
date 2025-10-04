@@ -1,0 +1,6 @@
+author_id,full_name,affiliation,openalex_id,headshot_url,field,clarivate_flag
+A1,Lene Hau,Harvard University,A123,https://example.com/hau.jpg,physics,1
+A2,John Pendry,Imperial College London,A456,https://example.com/pendry.jpg,physics,1
+A3,Alain Aspect,Institut d'Optique,A789,https://example.com/aspect.jpg,physics,1
+A4,Donna Strickland,University of Waterloo,A321,https://example.com/strickland.jpg,physics,0
+A5,Jun Ye,JILA / University of Colorado,A654,https://example.com/junye.jpg,physics,0
