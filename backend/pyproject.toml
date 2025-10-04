@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "nobel-backend"
+version = "0.1.0"
+description = "Nobel prediction backend"
+authors = ["OpenAI Assistant <assistant@example.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "0.103.2"
+pydantic = "1.10.14"
+prefect = "2.14.9"
+uvicorn = { extras = ["standard"], version = "^0.23.2" }
+sqlalchemy = "^2.0.20"
+pandas = "^2.1.1"
+numpy = "^1.26.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
