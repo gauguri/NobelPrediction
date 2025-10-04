@@ -1,0 +1,6 @@
+author_id,full_name,affiliation,openalex_id,headshot_url,field,total_citations,field_normalized_citations,h_index,award_count,topic_momentum,clarivate_flag,nobel_laureate,prediction_year
+A1,Lene Hau,Harvard University,A123,https://example.com/hau.jpg,physics,12000,98.5,65,4,0.82,1,0,2024
+A2,John Pendry,Imperial College London,A456,https://example.com/pendry.jpg,physics,18000,97.1,80,5,0.74,1,0,2024
+A3,Alain Aspect,Institut d'Optique,A789,https://example.com/aspect.jpg,physics,22000,99.2,90,6,0.88,1,1,2022
+A4,Donna Strickland,University of Waterloo,A321,https://example.com/strickland.jpg,physics,9000,90.3,55,3,0.65,0,1,2018
+A5,Jun Ye,JILA / University of Colorado,A654,https://example.com/junye.jpg,physics,15000,96.2,70,4,0.79,0,0,2024

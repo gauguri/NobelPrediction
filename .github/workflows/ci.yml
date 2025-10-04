@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install backend deps
+        run: |
+          cd backend
+          pip install poetry
+          poetry install
+      - name: Backend lint
+        run: |
+          cd backend
+          poetry run ruff check app
+          poetry run mypy app
+      - name: Backend tests
+        run: |
+          cd backend
+          poetry run pytest
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install pnpm
+        run: npm install -g pnpm
+      - name: Install deps
+        run: |
+          cd frontend
+          pnpm install
+      - name: Lint
+        run: |
+          cd frontend
+          pnpm lint
+      - name: Tests
+        run: |
+          cd frontend
+          pnpm test -- --run
