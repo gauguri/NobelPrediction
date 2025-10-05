@@ -1,25 +1,20 @@
-import json
-from pathlib import Path
-
 import pytest
 from fastapi.testclient import TestClient
 
 from app.main import app
-from app.services.bootstrap import bootstrap_state
 from app.services.training_service import TrainingService
 
 
-client = TestClient(app)
+@pytest.fixture(scope="module")
+def client() -> TestClient:
+    with TestClient(app) as test_client:
+        service = TrainingService()
+        service.run_etl()
+        service.train_models()
+        yield test_client
 
 
-def setup_module(module):
-    bootstrap_state()
-    service = TrainingService()
-    service.run_etl()
-    service.train_models()
-
-
-def test_health():
+def test_health(client: TestClient):
     response = client.get("/health")
     assert response.status_code == 200
 
@@ -28,7 +23,7 @@ def test_health():
     "field",
     ["Physics", "Chemistry", "Medicine", "Literature", "Peace", "Economics"],
 )
-def test_shortlist_endpoint(field):
+def test_shortlist_endpoint(client: TestClient, field: str):
     response = client.get(
         "/api/v1/predictions/shortlist", params={"field": field, "horizon": "one_year"}
     )
@@ -39,7 +34,7 @@ def test_shortlist_endpoint(field):
     assert payload[0]["candidate_name"]
 
 
-def test_shortlist_excludes_laureates():
+def test_shortlist_excludes_laureates(client: TestClient):
     response = client.get(
         "/api/v1/predictions/shortlist", params={"field": "Physics", "horizon": "one_year"}
     )
@@ -49,11 +44,23 @@ def test_shortlist_excludes_laureates():
     assert not laureates
 
 
-def test_reports_generation(tmp_path):
-    response = client.get("/api/v1/reports/shortlist.csv", params={"field": "Physics", "horizon": "one_year"})
+def test_reports_generation(client: TestClient, tmp_path):
+    response = client.get(
+        "/api/v1/reports/shortlist.csv", params={"field": "Physics", "horizon": "one_year"}
+    )
     assert response.status_code == 200
     assert response.headers["content-type"].startswith("text/csv")
 
-    response = client.get("/api/v1/reports/shortlist.pdf", params={"field": "Physics", "horizon": "one_year"})
+    response = client.get(
+        "/api/v1/reports/shortlist.pdf", params={"field": "Physics", "horizon": "one_year"}
+    )
     assert response.status_code == 200
     assert response.headers["content-type"].startswith("application/pdf")
+
+
+def test_backtests_bootstrapped(client: TestClient):
+    response = client.get("/api/v1/predictions/backtests")
+    assert response.status_code == 200
+    payload = response.json()
+    assert isinstance(payload, list)
+    assert payload
