@@ -64,3 +64,16 @@ def test_backtests_bootstrapped(client: TestClient):
     payload = response.json()
     assert isinstance(payload, list)
     assert payload
+
+
+def test_train_model_endpoint(client: TestClient):
+    response = client.post("/api/v1/training/model")
+    assert response.status_code == 200
+
+    payload = response.json()
+    assert payload["status"] == "trained"
+    details = payload["details"]
+    assert set(details.keys()) == {"model_paths", "prediction_count", "run_id"}
+    assert isinstance(details["model_paths"], dict)
+    assert isinstance(details["prediction_count"], int)
+    assert isinstance(details["run_id"], str)
