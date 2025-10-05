@@ -1,8 +1,9 @@
-from fastapi import FastAPI, Depends
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.router import router as api_router
 from app.core.config import get_settings
+from app.services.bootstrap import bootstrap_state
 
 
 def create_app() -> FastAPI:
@@ -23,6 +24,11 @@ def create_app() -> FastAPI:
 
 
 app = create_app()
+
+
+@app.on_event("startup")
+def on_startup() -> None:
+    bootstrap_state()
 
 
 @app.get("/health", tags=["system"])

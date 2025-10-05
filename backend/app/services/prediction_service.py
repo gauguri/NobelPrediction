@@ -1,8 +1,10 @@
-from datetime import datetime
 import json
+from datetime import datetime
 from typing import List
 
 import pandas as pd
+
+from fastapi import HTTPException, status
 
 from app.core.config import get_settings
 from app.core.database import db_session
@@ -87,6 +89,11 @@ class PredictionService:
 
     def get_backtests(self, field: str | None) -> List[BacktestMetricSchema]:
         backtests_path = settings.data_dir / "seed" / "backtests.json"
+        if not backtests_path.exists():
+            raise HTTPException(
+                status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                detail="Backtest metrics are not available yet.",
+            )
         df = pd.read_json(backtests_path)
         if field:
             df = df[df["field"] == field]
