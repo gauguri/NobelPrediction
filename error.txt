@@ -1,0 +1,2016 @@
+cd backend && poetry install
+Installing dependencies from lock file
+
+Package operations: 8 installs, 0 updates, 0 removals
+
+  - Installing greenlet (2.0.2)
+  - Installing uvloop (0.17.0)
+
+PEP517 build of a dependency failed
+
+Backend subprocess exited when trying to invoke build_wheel
+
+    | Command '['/tmp/tmp_wi4julz/.venv/bin/python', '/home/gguri/.local/share/pipx/venvs/poetry/lib/python3.12/site-packages/pyproject_hooks/_in_process/_in_process.py', 'build_wheel', '/tmp/tmpl1sfyu1c']' returned non-zero exit status 1.
+    | 
+    | /tmp/tmp_wi4julz/.venv/lib/python3.12/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+    | !!
+    | 
+    |         ********************************************************************************
+    |         Please consider removing the following classifiers in favor of a SPDX license expression:
+    | 
+    |         License :: OSI Approved :: MIT License
+    | 
+    |         See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+    |         ********************************************************************************
+    | 
+    | !!
+    |   self._finalize_license_expression()
+    | running bdist_wheel
+    | running build
+    | running build_py
+    | creating build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/__init__.py -> build/lib.linux-x86_64-cpython-312/greenlet
+    | creating build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_generator_nested.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_extension_interface.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_throw.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_gc.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_stack_saved.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_version.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_tracing.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/leakcheck.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_cpp.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/__init__.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_weakref.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_greenlet_trash.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_contextvars.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_leaks.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_generator.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/test_greenlet.py -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | creating build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/__init__.py -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | running egg_info
+    | writing src/greenlet.egg-info/PKG-INFO
+    | writing dependency_links to src/greenlet.egg-info/dependency_links.txt
+    | writing requirements to src/greenlet.egg-info/requires.txt
+    | writing top-level names to src/greenlet.egg-info/top_level.txt
+    | reading manifest file 'src/greenlet.egg-info/SOURCES.txt'
+    | reading manifest template 'MANIFEST.in'
+    | warning: no previously-included files found matching 'benchmarks/*.json'
+    | no previously-included directories found matching 'docs/_build'
+    | warning: no files found matching '*.py' under directory 'appveyor'
+    | warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    | warning: no previously-included files matching '*.pyd' found anywhere in distribution
+    | warning: no previously-included files matching '*.so' found anywhere in distribution
+    | warning: no previously-included files matching '.coverage' found anywhere in distribution
+    | adding license file 'LICENSE'
+    | adding license file 'LICENSE.PSF'
+    | adding license file 'AUTHORS'
+    | writing manifest file 'src/greenlet.egg-info/SOURCES.txt'
+    | copying src/greenlet/greenlet.cpp -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/greenlet.h -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/greenlet_allocator.hpp -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/greenlet_compiler_compat.hpp -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/greenlet_cpython_compat.hpp -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/greenlet_exceptions.hpp -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/greenlet_greenlet.hpp -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/greenlet_internal.hpp -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/greenlet_refs.hpp -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/greenlet_slp_switch.hpp -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/greenlet_thread_state.hpp -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/greenlet_thread_state_dict_cleanup.hpp -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/greenlet_thread_support.hpp -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/slp_platformselect.h -> build/lib.linux-x86_64-cpython-312/greenlet
+    | copying src/greenlet/tests/_test_extension.c -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/tests/_test_extension_cpp.cpp -> build/lib.linux-x86_64-cpython-312/greenlet/tests
+    | copying src/greenlet/platform/setup_switch_x64_masm.cmd -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_aarch64_gcc.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_alpha_unix.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_amd64_unix.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_arm32_gcc.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_arm32_ios.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_arm64_masm.asm -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_arm64_masm.obj -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_arm64_msvc.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_csky_gcc.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_m68k_gcc.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_mips_unix.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_ppc64_aix.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_ppc64_linux.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_ppc_aix.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_ppc_linux.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_ppc_macosx.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_ppc_unix.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_riscv_unix.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_s390_unix.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_sparc_sun_gcc.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_x32_unix.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_x64_masm.asm -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_x64_masm.obj -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_x64_msvc.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_x86_msvc.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | copying src/greenlet/platform/switch_x86_unix.h -> build/lib.linux-x86_64-cpython-312/greenlet/platform
+    | running build_ext
+    | building 'greenlet._greenlet' extension
+    | creating build/temp.linux-x86_64-cpython-312/src/greenlet
+    | x86_64-linux-gnu-g++ -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O2 -Wall -fPIC -I/tmp/tmp_wi4julz/.venv/include -I/usr/include/python3.12 -c src/greenlet/greenlet.cpp -o build/temp.linux-x86_64-cpython-312/src/greenlet/greenlet.o
+    | In file included from src/greenlet/greenlet_internal.hpp:20,
+    |                  from src/greenlet/greenlet.cpp:19:
+    | src/greenlet/greenlet_greenlet.hpp: In member function ‘void greenlet::PythonState::operator<<(const PyThreadState*)’:
+    | src/greenlet/greenlet_greenlet.hpp:831:41: error: ‘_PyCFrame’ {aka ‘struct _PyCFrame’} has no member named ‘use_tracing’
+    |   831 |     this->use_tracing = tstate->cframe->use_tracing;
+    |       |                                         ^~~~~~~~~~~
+    | src/greenlet/greenlet_greenlet.hpp:834:37: error: ‘const PyThreadState’ {aka ‘const struct _ts’} has no member named ‘recursion_limit’; did you mean ‘py_recursion_limit’?
+    |   834 |     this->recursion_depth = tstate->recursion_limit - tstate->recursion_remaining;
+    |       |                                     ^~~~~~~~~~~~~~~
+    |       |                                     py_recursion_limit
+    | src/greenlet/greenlet_greenlet.hpp:834:63: error: ‘const PyThreadState’ {aka ‘const struct _ts’} has no member named ‘recursion_remaining’; did you mean ‘c_recursion_remaining’?
+    |   834 |     this->recursion_depth = tstate->recursion_limit - tstate->recursion_remaining;
+    |       |                                                               ^~~~~~~~~~~~~~~~~~~
+    |       |                                                               c_recursion_remaining
+    | src/greenlet/greenlet_greenlet.hpp:848:42: error: ‘const PyThreadState’ {aka ‘const struct _ts’} has no member named ‘trash_delete_nesting’
+    |   848 |     this->trash_delete_nesting = tstate->trash_delete_nesting;
+    |       |                                          ^~~~~~~~~~~~~~~~~~~~
+    | src/greenlet/greenlet_greenlet.hpp: In member function ‘void greenlet::PythonState::operator>>(PyThreadState*)’:
+    | src/greenlet/greenlet_greenlet.hpp:867:21: error: ‘_PyCFrame’ {aka ‘struct _PyCFrame’} has no member named ‘use_tracing’
+    |   867 |     tstate->cframe->use_tracing = this->use_tracing;
+    |       |                     ^~~~~~~~~~~
+    | src/greenlet/greenlet_greenlet.hpp:870:13: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘recursion_remaining’; did you mean ‘c_recursion_remaining’?
+    |   870 |     tstate->recursion_remaining = tstate->recursion_limit - this->recursion_depth;
+    |       |             ^~~~~~~~~~~~~~~~~~~
+    |       |             c_recursion_remaining
+    | src/greenlet/greenlet_greenlet.hpp:870:43: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘recursion_limit’; did you mean ‘py_recursion_limit’?
+    |   870 |     tstate->recursion_remaining = tstate->recursion_limit - this->recursion_depth;
+    |       |                                           ^~~~~~~~~~~~~~~
+    |       |                                           py_recursion_limit
+    | src/greenlet/greenlet_greenlet.hpp:881:13: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘trash_delete_nesting’
+    |   881 |     tstate->trash_delete_nesting = this->trash_delete_nesting;
+    |       |             ^~~~~~~~~~~~~~~~~~~~
+    | src/greenlet/greenlet_greenlet.hpp: In member function ‘void greenlet::PythonState::will_switch_from(PyThreadState*)’:
+    | src/greenlet/greenlet_greenlet.hpp:891:48: error: ‘_PyCFrame’ {aka ‘struct _PyCFrame’} has no member named ‘use_tracing’
+    |   891 |     this->use_tracing = origin_tstate->cframe->use_tracing;
+    |       |                                                ^~~~~~~~~~~
+    | src/greenlet/greenlet_greenlet.hpp: In member function ‘void greenlet::PythonState::set_initial_state(const PyThreadState*)’:
+    | src/greenlet/greenlet_greenlet.hpp:899:37: error: ‘const PyThreadState’ {aka ‘const struct _ts’} has no member named ‘recursion_limit’; did you mean ‘py_recursion_limit’?
+    |   899 |     this->recursion_depth = tstate->recursion_limit - tstate->recursion_remaining;
+    |       |                                     ^~~~~~~~~~~~~~~
+    |       |                                     py_recursion_limit
+    | src/greenlet/greenlet_greenlet.hpp:899:63: error: ‘const PyThreadState’ {aka ‘const struct _ts’} has no member named ‘recursion_remaining’; did you mean ‘c_recursion_remaining’?
+    |   899 |     this->recursion_depth = tstate->recursion_limit - tstate->recursion_remaining;
+    |       |                                                               ^~~~~~~~~~~~~~~~~~~
+    |       |                                                               c_recursion_remaining
+    | src/greenlet/greenlet.cpp: In function ‘PyObject* mod_get_tstate_trash_delete_nesting(PyObject*)’:
+    | src/greenlet/greenlet.cpp:3095:36: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘trash_delete_nesting’
+    |  3095 |     return PyLong_FromLong(tstate->trash_delete_nesting);
+    |       |                                    ^~~~~~~~~~~~~~~~~~~~
+    | error: command '/usr/bin/x86_64-linux-gnu-g++' failed with exit code 1
+
+Note: This error originates from the build backend, and is likely not a problem with poetry but one of the following issues with greenlet (2.0.2)
+
+  - not supporting PEP 517 builds
+  - not specifying PEP 517 build requirements correctly
+  - the build requirements are incompatible with your operating system or Python version
+  - the build requirements are missing system dependencies (eg: compilers, libraries, headers).
+
+You can verify this by running pip wheel --no-cache-dir --use-pep517 "greenlet (==2.0.2)".
+
+
+PEP517 build of a dependency failed
+
+Backend subprocess exited when trying to invoke build_wheel
+
+    | Command '['/tmp/tmp0oemlsdn/.venv/bin/python', '/home/gguri/.local/share/pipx/venvs/poetry/lib/python3.12/site-packages/pyproject_hooks/_in_process/_in_process.py', 'build_wheel', '/tmp/tmpfs2t2la9']' returned non-zero exit status 1.
+    | 
+    | /tmp/tmp0oemlsdn/.venv/lib/python3.12/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+    | !!
+    | 
+    |         ********************************************************************************
+    |         Please consider removing the following classifiers in favor of a SPDX license expression:
+    | 
+    |         License :: OSI Approved :: Apache Software License
+    |         License :: OSI Approved :: MIT License
+    | 
+    |         See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+    |         ********************************************************************************
+    | 
+    | !!
+    |   self._finalize_license_expression()
+    | running bdist_wheel
+    | running build
+    | running build_py
+    | creating build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/_testbase.py -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/__init__.py -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/_noop.py -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/_version.py -> build/lib.linux-x86_64-cpython-312/uvloop
+    | running egg_info
+    | writing uvloop.egg-info/PKG-INFO
+    | writing dependency_links to uvloop.egg-info/dependency_links.txt
+    | writing requirements to uvloop.egg-info/requires.txt
+    | writing top-level names to uvloop.egg-info/top_level.txt
+    | reading manifest file 'uvloop.egg-info/SOURCES.txt'
+    | reading manifest template 'MANIFEST.in'
+    | warning: no previously-included files matching '*' found under directory 'vendor/libuv/.git'
+    | warning: no previously-included files matching '*' found under directory 'vendor/libuv/docs'
+    | warning: no previously-included files matching '*' found under directory 'vendor/libuv/img'
+    | adding license file 'LICENSE-APACHE'
+    | adding license file 'LICENSE-MIT'
+    | writing manifest file 'uvloop.egg-info/SOURCES.txt'
+    | /tmp/tmp0oemlsdn/.venv/lib/python3.12/site-packages/setuptools/command/build_py.py:212: _Warning: Package 'uvloop.handles' is absent from the `packages` configuration.
+    | !!
+    | 
+    |         ********************************************************************************
+    |         ############################
+    |         # Package would be ignored #
+    |         ############################
+    |         Python recognizes 'uvloop.handles' as an importable package[^1],
+    |         but it is absent from setuptools' `packages` configuration.
+    | 
+    |         This leads to an ambiguous overall configuration. If you want to distribute this
+    |         package, please make sure that 'uvloop.handles' is explicitly added
+    |         to the `packages` configuration field.
+    | 
+    |         Alternatively, you can also rely on setuptools' discovery methods
+    |         (for example by using `find_namespace_packages(...)`/`find_namespace:`
+    |         instead of `find_packages(...)`/`find:`).
+    | 
+    |         You can read more about "package discovery" on setuptools documentation page:
+    | 
+    |         - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+    | 
+    |         If you don't want 'uvloop.handles' to be distributed and are
+    |         already explicitly excluding 'uvloop.handles' via
+    |         `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+    |         you can try to use `exclude_package_data`, or `include-package-data=False` in
+    |         combination with a more fine grained `package-data` configuration.
+    | 
+    |         You can read more about "package data files" on setuptools documentation page:
+    | 
+    |         - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+    | 
+    | 
+    |         [^1]: For Python, any directory (with suitable naming) can be imported,
+    |               even if it does not contain any `.py` files.
+    |               On the other hand, currently there is no concept of package data
+    |               directory, all directories are treated like packages.
+    |         ********************************************************************************
+    | 
+    | !!
+    |   check.warn(importable)
+    | /tmp/tmp0oemlsdn/.venv/lib/python3.12/site-packages/setuptools/command/build_py.py:212: _Warning: Package 'uvloop.includes' is absent from the `packages` configuration.
+    | !!
+    | 
+    |         ********************************************************************************
+    |         ############################
+    |         # Package would be ignored #
+    |         ############################
+    |         Python recognizes 'uvloop.includes' as an importable package[^1],
+    |         but it is absent from setuptools' `packages` configuration.
+    | 
+    |         This leads to an ambiguous overall configuration. If you want to distribute this
+    |         package, please make sure that 'uvloop.includes' is explicitly added
+    |         to the `packages` configuration field.
+    | 
+    |         Alternatively, you can also rely on setuptools' discovery methods
+    |         (for example by using `find_namespace_packages(...)`/`find_namespace:`
+    |         instead of `find_packages(...)`/`find:`).
+    | 
+    |         You can read more about "package discovery" on setuptools documentation page:
+    | 
+    |         - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+    | 
+    |         If you don't want 'uvloop.includes' to be distributed and are
+    |         already explicitly excluding 'uvloop.includes' via
+    |         `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+    |         you can try to use `exclude_package_data`, or `include-package-data=False` in
+    |         combination with a more fine grained `package-data` configuration.
+    | 
+    |         You can read more about "package data files" on setuptools documentation page:
+    | 
+    |         - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+    | 
+    | 
+    |         [^1]: For Python, any directory (with suitable naming) can be imported,
+    |               even if it does not contain any `.py` files.
+    |               On the other hand, currently there is no concept of package data
+    |               directory, all directories are treated like packages.
+    |         ********************************************************************************
+    | 
+    | !!
+    |   check.warn(importable)
+    | copying uvloop/cbhandles.pxd -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/cbhandles.pyx -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/dns.pyx -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/errors.pyx -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/loop.c -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/loop.pxd -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/loop.pyi -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/loop.pyx -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/lru.pyx -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/pseudosock.pyx -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/py.typed -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/request.pxd -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/request.pyx -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/server.pxd -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/server.pyx -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/sslproto.pxd -> build/lib.linux-x86_64-cpython-312/uvloop
+    | copying uvloop/sslproto.pyx -> build/lib.linux-x86_64-cpython-312/uvloop
+    | creating build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/async_.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/async_.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/basetransport.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/basetransport.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/check.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/check.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/fsevent.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/fsevent.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/handle.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/handle.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/idle.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/idle.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/pipe.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/pipe.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/poll.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/poll.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/process.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/process.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/stream.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/stream.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/streamserver.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/streamserver.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/tcp.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/tcp.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/timer.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/timer.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/udp.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | copying uvloop/handles/udp.pyx -> build/lib.linux-x86_64-cpython-312/uvloop/handles
+    | creating build/lib.linux-x86_64-cpython-312/uvloop/includes
+    | copying uvloop/includes/__init__.py -> build/lib.linux-x86_64-cpython-312/uvloop/includes
+    | copying uvloop/includes/compat.h -> build/lib.linux-x86_64-cpython-312/uvloop/includes
+    | copying uvloop/includes/consts.pxi -> build/lib.linux-x86_64-cpython-312/uvloop/includes
+    | copying uvloop/includes/debug.h -> build/lib.linux-x86_64-cpython-312/uvloop/includes
+    | copying uvloop/includes/debug.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/includes
+    | copying uvloop/includes/flowcontrol.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/includes
+    | copying uvloop/includes/fork_handler.h -> build/lib.linux-x86_64-cpython-312/uvloop/includes
+    | copying uvloop/includes/python.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/includes
+    | copying uvloop/includes/stdlib.pxi -> build/lib.linux-x86_64-cpython-312/uvloop/includes
+    | copying uvloop/includes/system.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/includes
+    | copying uvloop/includes/uv.pxd -> build/lib.linux-x86_64-cpython-312/uvloop/includes
+    | running build_ext
+    | checking for a BSD-compatible install... /usr/bin/install -c
+    | checking whether build environment is sane... yes
+    | checking for a race-free mkdir -p... /usr/bin/mkdir -p
+    | checking for gawk... gawk
+    | checking whether make sets $(MAKE)... yes
+    | checking whether make supports nested variables... yes
+    | checking build system type... x86_64-pc-linux-gnu
+    | checking host system type... x86_64-pc-linux-gnu
+    | checking for gcc... gcc
+    | checking whether the C compiler works... yes
+    | checking for C compiler default output file name... a.out
+    | checking for suffix of executables... 
+    | checking whether we are cross compiling... no
+    | checking for suffix of object files... o
+    | checking whether the compiler supports GNU C... yes
+    | checking whether gcc accepts -g... yes
+    | checking for gcc option to enable C11 features... none needed
+    | checking whether gcc understands -c and -o together... yes
+    | checking whether make supports the include directive... yes (GNU style)
+    | checking dependency style of gcc... gcc3
+    | checking for gcc way to treat warnings as errors... -Werror
+    | checking if gcc supports __attribute__(( visibility("default") ))... yes
+    | checking if gcc supports -fvisibility=hidden... yes
+    | checking if gcc supports -fno-strict-aliasing flag... yes
+    | checking if gcc supports -g flag... yes
+    | checking if gcc supports -std=gnu89 flag... yes
+    | checking if gcc supports -Wall flag... yes
+    | checking if gcc supports -Wextra flag... yes
+    | checking if gcc supports -Wno-long-long flag... yes
+    | checking if gcc supports -Wno-unused-parameter flag... yes
+    | checking if gcc supports -Wstrict-prototypes flag... yes
+    | checking for ar... ar
+    | checking the archiver (ar) interface... ar
+    | checking how to print strings... printf
+    | checking for a sed that does not truncate output... /usr/bin/sed
+    | checking for grep that handles long lines and -e... /usr/bin/grep
+    | checking for egrep... /usr/bin/grep -E
+    | checking for fgrep... /usr/bin/grep -F
+    | checking for ld used by gcc... /usr/bin/ld
+    | checking if the linker (/usr/bin/ld) is GNU ld... yes
+    | checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+    | checking the name lister (/usr/bin/nm -B) interface... BSD nm
+    | checking whether ln -s works... yes
+    | checking the maximum length of command line arguments... 1572864
+    | checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+    | checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+    | checking for /usr/bin/ld option to reload object files... -r
+    | checking for objdump... objdump
+    | checking how to recognize dependent libraries... pass_all
+    | checking for dlltool... no
+    | checking how to associate runtime and link libraries... printf %s\n
+    | checking for archiver @FILE support... @
+    | checking for strip... strip
+    | checking for ranlib... ranlib
+    | checking command to parse /usr/bin/nm -B output from gcc object... ok
+    | checking for sysroot... no
+    | checking for a working dd... /usr/bin/dd
+    | checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+    | checking for mt... no
+    | checking if : is a manifest tool... no
+    | checking for stdio.h... yes
+    | checking for stdlib.h... yes
+    | checking for string.h... yes
+    | checking for inttypes.h... yes
+    | checking for stdint.h... yes
+    | checking for strings.h... yes
+    | checking for sys/stat.h... yes
+    | checking for sys/types.h... yes
+    | checking for unistd.h... yes
+    | checking for dlfcn.h... yes
+    | checking for objdir... .libs
+    | checking if gcc supports -fno-rtti -fno-exceptions... no
+    | checking for gcc option to produce PIC... -fPIC -DPIC
+    | checking if gcc PIC flag -fPIC -DPIC works... yes
+    | checking if gcc static flag -static works... yes
+    | checking if gcc supports -c -o file.o... yes
+    | checking if gcc supports -c -o file.o... (cached) yes
+    | checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+    | checking whether -lc should be explicitly linked in... no
+    | checking dynamic linker characteristics... GNU/Linux ld.so
+    | checking how to hardcode library paths into programs... immediate
+    | checking whether stripping libraries is possible... yes
+    | checking if libtool supports shared libraries... yes
+    | checking whether to build shared libraries... yes
+    | checking whether to build static libraries... yes
+    | checking whether make supports nested variables... (cached) yes
+    | checking how to run the C preprocessor... gcc -E
+    | checking whether gcc is Clang... no
+    | checking whether pthreads work with -pthread... yes
+    | checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+    | checking whether more special flags are required for pthreads... no
+    | checking for PTHREAD_PRIO_INHERIT... yes
+    | checking for library containing dlopen... none required
+    | checking for library containing kstat_lookup... no
+    | checking for library containing gethostbyname... none required
+    | checking for library containing perfstat_cpu... no
+    | checking for library containing clock_gettime... none required
+    | checking for library containing sendfile... none required
+    | checking for library containing socket... none required
+    | checking for special C compiler options needed for large files... no
+    | checking for _FILE_OFFSET_BITS value needed for large files... no
+    | checking for sys/ahafs_evProds.h... no
+    | checking that generated files are newer than configure... done
+    | configure: creating ./config.status
+    | config.status: creating Makefile
+    | config.status: creating libuv.pc
+    | config.status: executing depfiles commands
+    | config.status: executing libtool commands
+    | make[1]: Entering directory '/tmp/tmpe6_fu9xz/uvloop-0.17.0/build/libuv-x86_64'
+    |   CC       src/libuv_la-fs-poll.lo
+    |   CC       src/libuv_la-idna.lo
+    |   CC       src/libuv_la-inet.lo
+    |   CC       src/libuv_la-random.lo
+    |   CC       src/libuv_la-strscpy.lo
+    |   CC       src/libuv_la-threadpool.lo
+    |   CC       src/libuv_la-timer.lo
+    |   CC       src/libuv_la-uv-data-getter-setters.lo
+    |   CC       src/libuv_la-uv-common.lo
+    |   CC       src/libuv_la-version.lo
+    |   CC       src/unix/libuv_la-async.lo
+    |   CC       src/unix/libuv_la-core.lo
+    | In file included from src/uv-common.h:42,
+    |                  from src/uv-common.c:23:
+    | src/uv-common.c: In function ‘uv_walk’:
+    | src/queue.h:68:19: warning: storing the address of local variable ‘queue’ in ‘((void * (**)[2])MEM[(void *[2] * *)loop_13(D) + 16B])[1]’ [-Wdangling-pointer=]
+    |    68 |     QUEUE_PREV(q) = (n);                                                      \
+    |       |                   ^
+    | src/queue.h:78:7: note: in expansion of macro ‘QUEUE_SPLIT’
+    |    78 |       QUEUE_SPLIT(h, q, n);                                                   \
+    |       |       ^~~~~~~~~~~
+    | src/uv-common.c:505:3: note: in expansion of macro ‘QUEUE_MOVE’
+    |   505 |   QUEUE_MOVE(&loop->handle_queue, &queue);
+    |       |   ^~~~~~~~~~
+    | src/uv-common.c:501:9: note: ‘queue’ declared here
+    |   501 |   QUEUE queue;
+    |       |         ^~~~~
+    | src/uv-common.c:500:25: note: ‘loop’ declared here
+    |   500 | void uv_walk(uv_loop_t* loop, uv_walk_cb walk_cb, void* arg) {
+    |       |              ~~~~~~~~~~~^~~~
+    | In file included from ./src/uv-common.h:42,
+    |                  from src/unix/internal.h:25,
+    |                  from src/unix/async.c:26:
+    | src/unix/async.c: In function ‘uv__async_io.part.0’:
+    | ./src/queue.h:68:19: warning: storing the address of local variable ‘queue’ in ‘((void * (**)[2])MEM[(void *[2] * *)loop_6(D) + 432B])[1]’ [-Wdangling-pointer=]
+    |    68 |     QUEUE_PREV(q) = (n);                                                      \
+    |       |                   ^
+    | ./src/queue.h:78:7: note: in expansion of macro ‘QUEUE_SPLIT’
+    |    78 |       QUEUE_SPLIT(h, q, n);                                                   \
+    |       |       ^~~~~~~~~~~
+    | src/unix/async.c:149:3: note: in expansion of macro ‘QUEUE_MOVE’
+    |   149 |   QUEUE_MOVE(&loop->async_handles, &queue);
+    |       |   ^~~~~~~~~~
+    | src/unix/async.c:125:9: note: ‘queue’ declared here
+    |   125 |   QUEUE queue;
+    |       |         ^~~~~
+    | src/unix/async.c:122:37: note: ‘loop’ declared here
+    |   122 | static void uv__async_io(uv_loop_t* loop, uv__io_t* w, unsigned int events) {
+    |       |                          ~~~~~~~~~~~^~~~
+    |   CC       src/unix/libuv_la-dl.lo
+    |   CC       src/unix/libuv_la-fs.lo
+    |   CC       src/unix/libuv_la-getaddrinfo.lo
+    |   CC       src/unix/libuv_la-getnameinfo.lo
+    |   CC       src/unix/libuv_la-loop-watcher.lo
+    |   CC       src/unix/libuv_la-loop.lo
+    |   CC       src/unix/libuv_la-pipe.lo
+    | In file included from ./src/uv-common.h:42,
+    |                  from src/unix/internal.h:25,
+    |                  from src/unix/loop-watcher.c:23:
+    | src/unix/loop-watcher.c: In function ‘uv__run_prepare’:
+    | ./src/queue.h:68:19: warning: storing the address of local variable ‘queue’ in ‘((void * (**)[2])MEM[(void *[2] * *)loop_12(D) + 384B])[1]’ [-Wdangling-pointer=]
+    |    68 |     QUEUE_PREV(q) = (n);                                                      \
+    |       |                   ^
+    | ./src/queue.h:78:7: note: in expansion of macro ‘QUEUE_SPLIT’
+    |    78 |       QUEUE_SPLIT(h, q, n);                                                   \
+    |       |       ^~~~~~~~~~~
+    | src/unix/loop-watcher.c:52:5: note: in expansion of macro ‘QUEUE_MOVE’
+    |    52 |     QUEUE_MOVE(&loop->name##_handles, &queue);                                \
+    |       |     ^~~~~~~~~~
+    | src/unix/loop-watcher.c:66:1: note: in expansion of macro ‘UV_LOOP_WATCHER_DEFINE’
+    |    66 | UV_LOOP_WATCHER_DEFINE(prepare, PREPARE)
+    |       | ^~~~~~~~~~~~~~~~~~~~~~
+    | src/unix/loop-watcher.c:50:11: note: ‘queue’ declared here
+    |    50 |     QUEUE queue;                                                              \
+    |       |           ^~~~~
+    | src/unix/loop-watcher.c:66:1: note: in expansion of macro ‘UV_LOOP_WATCHER_DEFINE’
+    |    66 | UV_LOOP_WATCHER_DEFINE(prepare, PREPARE)
+    |       | ^~~~~~~~~~~~~~~~~~~~~~
+    | src/unix/loop-watcher.c:48:34: note: ‘loop’ declared here
+    |    48 |   void uv__run_##name(uv_loop_t* loop) {                                      \
+    |       |                       ~~~~~~~~~~~^~~~
+    | src/unix/loop-watcher.c:66:1: note: in expansion of macro ‘UV_LOOP_WATCHER_DEFINE’
+    |    66 | UV_LOOP_WATCHER_DEFINE(prepare, PREPARE)
+    |       | ^~~~~~~~~~~~~~~~~~~~~~
+    | src/unix/loop-watcher.c: In function ‘uv__run_check’:
+    | ./src/queue.h:68:19: warning: storing the address of local variable ‘queue’ in ‘((void * (**)[2])MEM[(void *[2] * *)loop_12(D) + 400B])[1]’ [-Wdangling-pointer=]
+    |    68 |     QUEUE_PREV(q) = (n);                                                      \
+    |       |                   ^
+    | ./src/queue.h:78:7: note: in expansion of macro ‘QUEUE_SPLIT’
+    |    78 |       QUEUE_SPLIT(h, q, n);                                                   \
+    |       |       ^~~~~~~~~~~
+    | src/unix/loop-watcher.c:52:5: note: in expansion of macro ‘QUEUE_MOVE’
+    |    52 |     QUEUE_MOVE(&loop->name##_handles, &queue);                                \
+    |       |     ^~~~~~~~~~
+    | src/unix/loop-watcher.c:67:1: note: in expansion of macro ‘UV_LOOP_WATCHER_DEFINE’
+    |    67 | UV_LOOP_WATCHER_DEFINE(check, CHECK)
+    |       | ^~~~~~~~~~~~~~~~~~~~~~
+    | src/unix/loop-watcher.c:50:11: note: ‘queue’ declared here
+    |    50 |     QUEUE queue;                                                              \
+    |       |           ^~~~~
+    | src/unix/loop-watcher.c:67:1: note: in expansion of macro ‘UV_LOOP_WATCHER_DEFINE’
+    |    67 | UV_LOOP_WATCHER_DEFINE(check, CHECK)
+    |       | ^~~~~~~~~~~~~~~~~~~~~~
+    | src/unix/loop-watcher.c:48:34: note: ‘loop’ declared here
+    |    48 |   void uv__run_##name(uv_loop_t* loop) {                                      \
+    |       |                       ~~~~~~~~~~~^~~~
+    | src/unix/loop-watcher.c:67:1: note: in expansion of macro ‘UV_LOOP_WATCHER_DEFINE’
+    |    67 | UV_LOOP_WATCHER_DEFINE(check, CHECK)
+    |       | ^~~~~~~~~~~~~~~~~~~~~~
+    | src/unix/loop-watcher.c: In function ‘uv__run_idle’:
+    | ./src/queue.h:68:19: warning: storing the address of local variable ‘queue’ in ‘((void * (**)[2])MEM[(void *[2] * *)loop_12(D) + 416B])[1]’ [-Wdangling-pointer=]
+    |    68 |     QUEUE_PREV(q) = (n);                                                      \
+    |       |                   ^
+    | ./src/queue.h:78:7: note: in expansion of macro ‘QUEUE_SPLIT’
+    |    78 |       QUEUE_SPLIT(h, q, n);                                                   \
+    |       |       ^~~~~~~~~~~
+    | src/unix/loop-watcher.c:52:5: note: in expansion of macro ‘QUEUE_MOVE’
+    |    52 |     QUEUE_MOVE(&loop->name##_handles, &queue);                                \
+    |       |     ^~~~~~~~~~
+    | src/unix/loop-watcher.c:68:1: note: in expansion of macro ‘UV_LOOP_WATCHER_DEFINE’
+    |    68 | UV_LOOP_WATCHER_DEFINE(idle, IDLE)
+    |       | ^~~~~~~~~~~~~~~~~~~~~~
+    | src/unix/loop-watcher.c:50:11: note: ‘queue’ declared here
+    |    50 |     QUEUE queue;                                                              \
+    |       |           ^~~~~
+    | src/unix/loop-watcher.c:68:1: note: in expansion of macro ‘UV_LOOP_WATCHER_DEFINE’
+    |    68 | UV_LOOP_WATCHER_DEFINE(idle, IDLE)
+    |       | ^~~~~~~~~~~~~~~~~~~~~~
+    | src/unix/loop-watcher.c:48:34: note: ‘loop’ declared here
+    |    48 |   void uv__run_##name(uv_loop_t* loop) {                                      \
+    |       |                       ~~~~~~~~~~~^~~~
+    | src/unix/loop-watcher.c:68:1: note: in expansion of macro ‘UV_LOOP_WATCHER_DEFINE’
+    |    68 | UV_LOOP_WATCHER_DEFINE(idle, IDLE)
+    |       | ^~~~~~~~~~~~~~~~~~~~~~
+    |   CC       src/unix/libuv_la-poll.lo
+    |   CC       src/unix/libuv_la-process.lo
+    |   CC       src/unix/libuv_la-random-devurandom.lo
+    |   CC       src/unix/libuv_la-signal.lo
+    |   CC       src/unix/libuv_la-stream.lo
+    |   CC       src/unix/libuv_la-tcp.lo
+    |   CC       src/unix/libuv_la-thread.lo
+    | In file included from ./src/uv-common.h:42,
+    |                  from src/unix/internal.h:25,
+    |                  from src/unix/stream.c:23:
+    | src/unix/stream.c: In function ‘uv__write_callbacks’:
+    | ./src/queue.h:68:19: warning: storing the address of local variable ‘pq’ in ‘((void * (**)[2])MEM[(void *[2] * *)stream_23(D) + 208B])[1]’ [-Wdangling-pointer=]
+    |    68 |     QUEUE_PREV(q) = (n);                                                      \
+    |       |                   ^
+    | ./src/queue.h:78:7: note: in expansion of macro ‘QUEUE_SPLIT’
+    |    78 |       QUEUE_SPLIT(h, q, n);                                                   \
+    |       |       ^~~~~~~~~~~
+    | src/unix/stream.c:944:3: note: in expansion of macro ‘QUEUE_MOVE’
+    |   944 |   QUEUE_MOVE(&stream->write_completed_queue, &pq);
+    |       |   ^~~~~~~~~~
+    | src/unix/stream.c:939:9: note: ‘pq’ declared here
+    |   939 |   QUEUE pq;
+    |       |         ^~
+    | src/unix/stream.c:936:46: note: ‘stream’ declared here
+    |   936 | static void uv__write_callbacks(uv_stream_t* stream) {
+    |       |                                 ~~~~~~~~~~~~~^~~~~~
+    | src/unix/thread.c: In function ‘uv__thread_stack_size’:
+    | src/unix/thread.c:195:24: warning: comparison of integer expressions of different signedness: ‘rlim_t’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
+    |   195 |       if (lim.rlim_cur >= PTHREAD_STACK_MIN)
+    |       |                        ^~
+    | src/unix/thread.c: In function ‘uv_thread_create_ex’:
+    | src/unix/thread.c:243:20: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
+    |   243 |     if (stack_size < PTHREAD_STACK_MIN)
+    |       |                    ^
+    |   CC       src/unix/libuv_la-tty.lo
+    |   CC       src/unix/libuv_la-udp.lo
+    |   CC       src/unix/libuv_la-linux-core.lo
+    |   CC       src/unix/libuv_la-linux-inotify.lo
+    |   CC       src/unix/libuv_la-linux-syscalls.lo
+    |   CC       src/unix/libuv_la-procfs-exepath.lo
+    |   CC       src/unix/libuv_la-proctitle.lo
+    |   CC       src/unix/libuv_la-random-getrandom.lo
+    |   CC       src/unix/libuv_la-random-sysctl-linux.lo
+    |   CC       src/unix/libuv_la-epoll.lo
+    |   CCLD     libuv.la
+    | make[1]: Leaving directory '/tmp/tmpe6_fu9xz/uvloop-0.17.0/build/libuv-x86_64'
+    | building 'uvloop.loop' extension
+    | creating build/temp.linux-x86_64-cpython-312/uvloop
+    | x86_64-linux-gnu-gcc -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O2 -Wall -fPIC -I/tmp/tmp0oemlsdn/.venv/include -I/usr/include/python3.12 -I/tmp/tmpe6_fu9xz/uvloop-0.17.0/vendor/libuv/include -c uvloop/loop.c -o build/temp.linux-x86_64-cpython-312/uvloop/loop.o -O2
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop___convert_python_error’:
+    | uvloop/loop.c:8182:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    |  8182 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_PermissionError); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 16, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | In file included from /usr/include/python3.12/dictobject.h:90,
+    |                  from /usr/include/python3.12/Python.h:64,
+    |                  from uvloop/loop.c:22:
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:8224:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    |  8224 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_BlockingIOError); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 19, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:8266:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    |  8266 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_BrokenPipeError); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 22, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:8298:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    |  8298 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_ConnectionAbortedError); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 25, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:8330:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    |  8330 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_ConnectionRefusedError); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 28, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:8362:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    |  8362 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_ConnectionResetError); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 31, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:8394:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    |  8394 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_FileExistsError); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 34, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:8426:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    |  8426 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_FileNotFoundError); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 37, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:8458:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    |  8458 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_InterruptedError); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 40, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:8490:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    |  8490 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_IsADirectoryError); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 43, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:8522:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    |  8522 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_ProcessLookupError); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 46, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:8554:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    |  8554 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_TimeoutError); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 49, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_4Loop__ceval_process_signals’:
+    | uvloop/loop.c:13063:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 13063 |   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_noop); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 381, __pyx_L1_error)
+    |       |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_4Loop__read_from_self’:
+    | uvloop/loop.c:13265:7: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 13265 |       __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_InterruptedError); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 392, __pyx_L7_except_error)
+    |       |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:13301:7: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 13301 |       __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_BlockingIOError); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 394, __pyx_L7_except_error)
+    |       |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_4Loop__sock_recv’:
+    | uvloop/loop.c:21702:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 21702 |     __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_BlockingIOError); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 962, __pyx_L8_except_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:21704:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 21704 |     __Pyx_GetModuleGlobalName(__pyx_t_12, __pyx_n_s_InterruptedError); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 962, __pyx_L8_except_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_4Loop__sock_recv_into’:
+    | uvloop/loop.c:22191:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 22191 |     __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_BlockingIOError); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 989, __pyx_L8_except_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:22193:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 22193 |     __Pyx_GetModuleGlobalName(__pyx_t_12, __pyx_n_s_InterruptedError); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 989, __pyx_L8_except_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_4Loop__sock_sendall’:
+    | uvloop/loop.c:22644:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 22644 |     __Pyx_GetModuleGlobalName(__pyx_t_12, __pyx_n_s_BlockingIOError); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 1020, __pyx_L8_except_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:22646:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 22646 |     __Pyx_GetModuleGlobalName(__pyx_t_13, __pyx_n_s_InterruptedError); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 1020, __pyx_L8_except_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:22929:7: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 22929 |       __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_memoryview); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1036, __pyx_L1_error)
+    |       |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:22943:9: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 22943 |         __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_memoryview); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1037, __pyx_L1_error)
+    |       |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_4Loop__sock_accept’:
+    | uvloop/loop.c:23265:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 23265 |     __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_BlockingIOError); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1054, __pyx_L5_except_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:23267:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 23267 |     __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_InterruptedError); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1054, __pyx_L5_except_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_4Loop__sock_connect’:
+    | uvloop/loop.c:23575:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 23575 |     __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_BlockingIOError); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1073, __pyx_L5_except_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:23577:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 23577 |     __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_InterruptedError); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 1073, __pyx_L5_except_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:23623:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 23623 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_SyncSocketWriterFuture); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1078, __pyx_L1_error)
+    |       |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_4Loop__sock_connect_cb’:
+    | uvloop/loop.c:24107:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 24107 |     __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_BlockingIOError); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 1107, __pyx_L8_except_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:24109:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 24109 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_InterruptedError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1107, __pyx_L8_except_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_4Loop__set_coroutine_debug’:
+    | uvloop/loop.c:24483:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 24483 |     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_sys); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1141, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:24522:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 24522 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_sys); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1142, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:24562:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 24562 |     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_sys); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1145, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_pf_6uvloop_4loop_4Loop_24run_forever’:
+    | uvloop/loop.c:28035:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 28035 |   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_sys); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1373, __pyx_L1_error)
+    |       |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:28065:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 28065 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_sys); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1374, __pyx_L1_error)
+    |       |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:28143:7: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 28143 |       __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_sys); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1380, __pyx_L1_error)
+    |       |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:28194:9: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 28194 |         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_sys); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1380, __pyx_L8_error)
+    |       |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_gb_6uvloop_4loop_4Loop_63generator5’:
+    | uvloop/loop.c:38988:9: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 38988 |         __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_FileNotFoundError); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 2151, __pyx_L14_except_error)
+    |       |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_gb_6uvloop_4loop_4Loop_85generator7’:
+    | uvloop/loop.c:43851:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 43851 |   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_SyncSocketReaderFuture); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 2473, __pyx_L1_error)
+    |       |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_gb_6uvloop_4loop_4Loop_88generator8’:
+    | uvloop/loop.c:44193:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 44193 |   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_SyncSocketReaderFuture); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 2500, __pyx_L1_error)
+    |       |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_gb_6uvloop_4loop_4Loop_91generator9’:
+    | uvloop/loop.c:44709:9: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 44709 |         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_memoryview); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 2548, __pyx_L13_except_error)
+    |       |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:44723:11: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 44723 |           __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_memoryview); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 2549, __pyx_L13_except_error)
+    |       |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:44773:7: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 44773 |       __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_BlockingIOError); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 2538, __pyx_L13_except_error)
+    |       |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:44775:7: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 44775 |       __Pyx_GetModuleGlobalName(__pyx_t_12, __pyx_n_s_InterruptedError); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 2538, __pyx_L13_except_error)
+    |       |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:44822:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 44822 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_SyncSocketWriterFuture); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 2552, __pyx_L9_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_gb_6uvloop_4loop_4Loop_94generator10’:
+    | uvloop/loop.c:45202:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 45202 |   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_SyncSocketReaderFuture); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 2583, __pyx_L1_error)
+    |       |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_gb_6uvloop_4loop_4Loop_135generator21’:
+    | uvloop/loop.c:53214:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 53214 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_unset); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 3038, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:54576:3: warning: ‘Py_OptimizeFlag’ is deprecated [-Wdeprecated-declarations]
+    | 54576 |   if (unlikely(!Py_OptimizeFlag)) {
+    |       |   ^~
+    | In file included from /usr/include/python3.12/Python.h:48:
+    | /usr/include/python3.12/cpython/pydebug.h:13:37: note: declared here
+    |    13 | Py_DEPRECATED(3.12) PyAPI_DATA(int) Py_OptimizeFlag;
+    |       |                                     ^~~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_pf_6uvloop_4loop_4Loop_142_asyncgen_firstiter_hook’:
+    | uvloop/loop.c:55253:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 55253 |     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_ResourceWarning); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 3173, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_6Handle__run’:
+    | uvloop/loop.c:60296:9: warning: ‘Py_OptimizeFlag’ is deprecated [-Wdeprecated-declarations]
+    | 60296 |         if (unlikely(!Py_OptimizeFlag)) {
+    |       |         ^~
+    | /usr/include/python3.12/cpython/pydebug.h:13:37: note: declared here
+    |    13 | Py_DEPRECATED(3.12) PyAPI_DATA(int) Py_OptimizeFlag;
+    |       |                                     ^~~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_11TimerHandle__run’:
+    | uvloop/loop.c:63389:9: warning: ‘Py_OptimizeFlag’ is deprecated [-Wdeprecated-declarations]
+    | 63389 |         if (unlikely(!Py_OptimizeFlag)) {
+    |       |         ^~
+    | /usr/include/python3.12/cpython/pydebug.h:13:37: note: declared here
+    |    13 | Py_DEPRECATED(3.12) PyAPI_DATA(int) Py_OptimizeFlag;
+    |       |                                     ^~~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_pf_6uvloop_4loop_12PseudoSocket_78__reduce_cython__’:
+    | uvloop/loop.c:70777:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 70777 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_pyx_unpickle_PseudoSocket); if (unlikely(!__pyx_t_4)) __PYX_ERR(7, 13, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:70823:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 70823 |     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_pyx_unpickle_PseudoSocket); if (unlikely(!__pyx_t_3)) __PYX_ERR(7, 15, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_pf_6uvloop_4loop_8LruCache_14__reduce_cython__’:
+    | uvloop/loop.c:72161:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 72161 |     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pyx_unpickle_LruCache); if (unlikely(!__pyx_t_1)) __PYX_ERR(7, 13, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:72207:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 72207 |     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_pyx_unpickle_LruCache); if (unlikely(!__pyx_t_6)) __PYX_ERR(7, 15, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_8UVHandle__warn_unclosed’:
+    | uvloop/loop.c:73570:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 73570 |   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_ResourceWarning); if (unlikely(!__pyx_t_6)) __PYX_ERR(2, 96, __pyx_L1_error)
+    |       |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_14UVSocketHandle__get_socket’:
+    | uvloop/loop.c:76002:5: warning: ‘Py_OptimizeFlag’ is deprecated [-Wdeprecated-declarations]
+    | 76002 |     if (unlikely(!Py_OptimizeFlag)) {
+    |       |     ^~
+    | /usr/include/python3.12/cpython/pydebug.h:13:37: note: declared here
+    |    13 | Py_DEPRECATED(3.12) PyAPI_DATA(int) Py_OptimizeFlag;
+    |       |                                     ^~~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_19_StreamWriteContext_new’:
+    | uvloop/loop.c:89914:9: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 89914 |         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_memoryview); if (unlikely(!__pyx_t_4)) __PYX_ERR(18, 128, __pyx_L1_error)
+    |       |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_8UVStream__buffer_write’:
+    | uvloop/loop.c:92739:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 92739 |     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_memoryview); if (unlikely(!__pyx_t_3)) __PYX_ERR(18, 414, __pyx_L1_error)
+    |       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_8UVStream__exec_write’:
+    | uvloop/loop.c:93555:11: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 93555 |           __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_memoryview); if (unlikely(!__pyx_t_5)) __PYX_ERR(18, 506, __pyx_L1_error)
+    |       |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_9UVProcess__init’:
+    | uvloop/loop.c:109412:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 109412 |     __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_builtins); if (unlikely(!__pyx_t_9)) __PYX_ERR(4, 157, __pyx_L1_error)
+    |        |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_18UVProcessTransport__check_proc’:
+    | uvloop/loop.c:112498:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 112498 |     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_ProcessLookupError); if (unlikely(!__pyx_t_4)) __PYX_ERR(4, 378, __pyx_L1_error)
+    |        |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_18UVProcessTransport__init_files’:
+    | uvloop/loop.c:113757:7: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 113757 |       __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_WriteSubprocessPipeProto); if (unlikely(!__pyx_t_6)) __PYX_ERR(4, 434, __pyx_L1_error)
+    |        |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:114114:7: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 114114 |       __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ReadSubprocessPipeProto); if (unlikely(!__pyx_t_5)) __PYX_ERR(4, 462, __pyx_L1_error)
+    |        |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:114471:7: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 114471 |       __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_ReadSubprocessPipeProto); if (unlikely(!__pyx_t_6)) __PYX_ERR(4, 484, __pyx_L1_error)
+    |        |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:114774:3: warning: ‘Py_OptimizeFlag’ is deprecated [-Wdeprecated-declarations]
+    | 114774 |   if (unlikely(!Py_OptimizeFlag)) {
+    |        |   ^~
+    | /usr/include/python3.12/cpython/pydebug.h:13:37: note: declared here
+    |    13 | Py_DEPRECATED(3.12) PyAPI_DATA(int) Py_OptimizeFlag;
+    |       |                                     ^~~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop___uvfsevent_callback’:
+    | uvloop/loop.c:120652:7: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 120652 |       __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_FileSystemEvent); if (unlikely(!__pyx_t_9)) __PYX_ERR(21, 107, __pyx_L4_error)
+    |        |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_pf_6uvloop_4loop_21_SSLProtocolTransport_12__dealloc__’:
+    | uvloop/loop.c:128413:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 128413 |     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_ResourceWarning); if (unlikely(!__pyx_t_3)) __PYX_ERR(23, 58, __pyx_L1_error)
+    |        |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_pf_6uvloop_4loop_21_SSLProtocolTransport_32write’:
+    | uvloop/loop.c:129429:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 129429 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_memoryview); if (unlikely(!__pyx_t_1)) __PYX_ERR(23, 150, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_pf_6uvloop_4loop_11SSLProtocol_16eof_received’:
+    | uvloop/loop.c:132882:9: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 132882 |         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_ConnectionResetError); if (unlikely(!__pyx_t_4)) __PYX_ERR(23, 403, __pyx_L3_error)
+    |        |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_11SSLProtocol__check_handshake_timeout’:
+    | uvloop/loop.c:134385:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 134385 |     __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ConnectionAbortedError); if (unlikely(!__pyx_t_5)) __PYX_ERR(23, 495, __pyx_L1_error)
+    |        |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_pf_6uvloop_4loop_11SSLProtocol_18pause_writing’:
+    | uvloop/loop.c:141557:3: warning: ‘Py_OptimizeFlag’ is deprecated [-Wdeprecated-declarations]
+    | 141557 |   if (unlikely(!Py_OptimizeFlag)) {
+    |        |   ^~
+    | /usr/include/python3.12/cpython/pydebug.h:13:37: note: declared here
+    |    13 | Py_DEPRECATED(3.12) PyAPI_DATA(int) Py_OptimizeFlag;
+    |       |                                     ^~~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_pf_6uvloop_4loop_11SSLProtocol_20resume_writing’:
+    | uvloop/loop.c:141633:3: warning: ‘Py_OptimizeFlag’ is deprecated [-Wdeprecated-declarations]
+    | 141633 |   if (unlikely(!Py_OptimizeFlag)) {
+    |        |   ^~
+    | /usr/include/python3.12/cpython/pydebug.h:13:37: note: declared here
+    |    13 | Py_DEPRECATED(3.12) PyAPI_DATA(int) Py_OptimizeFlag;
+    |       |                                     ^~~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_6Server__attach’:
+    | uvloop/loop.c:147221:3: warning: ‘Py_OptimizeFlag’ is deprecated [-Wdeprecated-declarations]
+    | 147221 |   if (unlikely(!Py_OptimizeFlag)) {
+    |        |   ^~
+    | /usr/include/python3.12/cpython/pydebug.h:13:37: note: declared here
+    |    13 | Py_DEPRECATED(3.12) PyAPI_DATA(int) Py_OptimizeFlag;
+    |       |                                     ^~~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_f_6uvloop_4loop_6Server__detach’:
+    | uvloop/loop.c:147287:3: warning: ‘Py_OptimizeFlag’ is deprecated [-Wdeprecated-declarations]
+    | 147287 |   if (unlikely(!Py_OptimizeFlag)) {
+    |        |   ^~
+    | /usr/include/python3.12/cpython/pydebug.h:13:37: note: declared here
+    |    13 | Py_DEPRECATED(3.12) PyAPI_DATA(int) Py_OptimizeFlag;
+    |       |                                     ^~~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_gb_6uvloop_4loop_6Server_24generator28’:
+    | uvloop/loop.c:148931:7: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 148931 |       __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_11)) __PYX_ERR(25, 116, __pyx_L11_except_error)
+    |        |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__pyx_pymod_exec_loop’:
+    | uvloop/loop.c:167765:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167765 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 28, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:167782:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167782 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 29, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:167799:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167799 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 30, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:167816:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167816 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 31, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:167833:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167833 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 32, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:167850:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167850 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 33, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:167867:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167867 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 34, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:167884:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167884 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 35, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:167901:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167901 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 36, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:167918:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167918 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 37, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:167935:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167935 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 38, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:167955:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167955 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 39, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:167972:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167972 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 40, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:167989:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 167989 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 41, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168006:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168006 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 42, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168023:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168023 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 43, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168040:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168040 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 44, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168057:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168057 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 45, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168074:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168074 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 46, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168094:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168094 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 47, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168111:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168111 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 48, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168128:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168128 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_asyncio); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 49, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168148:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168148 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_collections); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 51, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168165:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168165 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_collections); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 52, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168185:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168185 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_collections); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 53, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168202:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168202 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_collections); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 54, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168219:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168219 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_concurrent); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 56, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168239:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168239 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_concurrent); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 57, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168287:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168287 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_functools); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 62, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168304:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168304 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_gc); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 64, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168321:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168321 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_itertools); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 66, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168338:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168338 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_inspect); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 67, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168355:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168355 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 69, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168368:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168368 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 70, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168384:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168384 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 71, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168397:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168397 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 72, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168413:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168413 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 73, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168429:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168429 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 74, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168445:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168445 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 75, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168461:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168461 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 77, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168478:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168478 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 78, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168495:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168495 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 79, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168512:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168512 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 80, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168529:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168529 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 81, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168546:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168546 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 82, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168563:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168563 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 83, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168580:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168580 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 84, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168597:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168597 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 86, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168613:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168613 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 87, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168629:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168629 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 88, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168645:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168645 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 89, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168661:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168661 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 90, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168677:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168677 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 91, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168693:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168693 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 92, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168709:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168709 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 93, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168725:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168725 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 94, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168741:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168741 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 95, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168757:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168757 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 96, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168773:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168773 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 97, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168789:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168789 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 98, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168805:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168805 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_socket_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 99, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168821:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168821 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 102, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168839:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168839 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 103, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168856:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168856 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 104, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168873:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168873 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 105, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168890:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168890 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 106, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168907:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168907 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 107, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168924:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168924 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 108, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168941:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168941 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 109, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168958:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168958 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 110, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168975:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168975 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 111, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:168992:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 168992 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 112, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169009:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169009 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 113, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169026:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169026 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 114, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169043:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169043 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 115, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169060:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169060 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_stat); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 117, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169077:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169077 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sys); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 119, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169097:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169097 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sys); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 120, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169117:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169117 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sys); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 121, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169134:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169134 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_sys); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 122, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169151:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169151 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sys); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 123, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169168:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169168 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_sys); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 124, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169185:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169185 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sys); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 125, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169202:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169202 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_sys); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 126, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169219:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169219 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sys); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 127, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169237:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169237 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ssl); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 129, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169254:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169254 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_ssl); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 130, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169271:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169271 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ssl); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 131, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169288:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169288 |   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_ssl); if (unlikely(!__pyx_t_2)) __PYX_ERR(30, 132, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169305:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169305 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ssl); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 133, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169310:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169310 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ssl); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 133, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169335:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169335 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ssl); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 134, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169352:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169352 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ssl); if (unlikely(!__pyx_t_5)) __PYX_ERR(30, 135, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169369:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169369 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ssl); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 136, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169385:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169385 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ssl); if (unlikely(!__pyx_t_5)) __PYX_ERR(30, 137, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169401:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169401 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ssl); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 138, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169417:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169417 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_threading); if (unlikely(!__pyx_t_5)) __PYX_ERR(30, 140, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169434:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169434 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_threading); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 141, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169451:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169451 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_subprocess); if (unlikely(!__pyx_t_5)) __PYX_ERR(30, 143, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169467:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169467 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_subprocess); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 144, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169483:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169483 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_subprocess); if (unlikely(!__pyx_t_5)) __PYX_ERR(30, 145, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169499:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169499 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_subprocess); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 146, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169516:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169516 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_signal); if (unlikely(!__pyx_t_5)) __PYX_ERR(30, 148, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169532:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169532 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_signal); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 149, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169549:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169549 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_signal); if (unlikely(!__pyx_t_5)) __PYX_ERR(30, 150, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169566:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169566 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_signal); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 151, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169583:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169583 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_signal); if (unlikely(!__pyx_t_5)) __PYX_ERR(30, 152, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169600:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169600 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_signal); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 153, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169617:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169617 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_time); if (unlikely(!__pyx_t_5)) __PYX_ERR(30, 155, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169634:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169634 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_time); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 156, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169651:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169651 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_traceback_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(30, 158, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169668:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169668 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_traceback_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 159, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169685:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169685 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_traceback_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(30, 160, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169702:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169702 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_warnings); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 162, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169719:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169719 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_weakref); if (unlikely(!__pyx_t_5)) __PYX_ERR(30, 164, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169736:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169736 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_weakref); if (unlikely(!__pyx_t_1)) __PYX_ERR(30, 165, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:169909:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 169909 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_unset); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 2985, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:170270:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 170270 |   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_WriteSubprocessPipeProto); if (unlikely(!__pyx_t_5)) __PYX_ERR(4, 715, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:170345:3: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 170345 |   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_enum); if (unlikely(!__pyx_t_1)) __PYX_ERR(21, 4, __pyx_L1_error)
+    |        |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:170394:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 170394 |     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_RENAME);
+    |        |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:170401:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 170401 |     __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_CHANGE);
+    |        |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__Pyx_get_tp_dict_version’:
+    | uvloop/loop.c:170657:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 170657 |     return likely(dict) ? __PYX_GET_DICT_VERSION(dict) : 0;
+    |        |     ^~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__Pyx_get_object_dict_version’:
+    | uvloop/loop.c:170669:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 170669 |     return (dictptr && *dictptr) ? __PYX_GET_DICT_VERSION(*dictptr) : 0;
+    |        |     ^~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__Pyx_object_dict_version_matches’:
+    | uvloop/loop.c:170673:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 170673 |     if (unlikely(!dict) || unlikely(tp_dict_version != __PYX_GET_DICT_VERSION(dict)))
+    |        |     ^~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__Pyx__GetModuleGlobalName’:
+    | uvloop/loop.c:170690:5: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 170690 |     __PYX_UPDATE_DICT_CACHE(__pyx_d, result, *dict_cached_value, *dict_version)
+    |        |     ^~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__Pyx_PyInt_AndObjC’:
+    | uvloop/loop.c:170978:51: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 170978 |         const digit* digits = ((PyLongObject*)op1)->ob_digit;
+    |        |                                                   ^~
+    | uvloop/loop.c: In function ‘__Pyx_PyInt_AddObjC’:
+    | uvloop/loop.c:171122:51: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 171122 |         const digit* digits = ((PyLongObject*)op1)->ob_digit;
+    |        |                                                   ^~
+    | uvloop/loop.c: In function ‘__Pyx_Raise’:
+    | uvloop/loop.c:171636:34: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘curexc_traceback’
+    | 171636 |         PyObject* tmp_tb = tstate->curexc_traceback;
+    |        |                                  ^~
+    | uvloop/loop.c:171639:19: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘curexc_traceback’
+    | 171639 |             tstate->curexc_traceback = tb;
+    |        |                   ^~
+    | uvloop/loop.c: In function ‘__Pyx_PyUnicode_Join’:
+    | uvloop/loop.c:573:51: warning: implicit declaration of function ‘_PyUnicode_Ready’; did you mean ‘PyUnicode_READY’? [-Wimplicit-function-declaration]
+    |   573 |                                               0 : _PyUnicode_Ready((PyObject *)(op)))
+    |       |                                                   ^~~~~~~~~~~~~~~~
+    | uvloop/loop.c:963:43: note: in definition of macro ‘unlikely’
+    |   963 |   #define unlikely(x) __builtin_expect(!!(x), 0)
+    |       |                                           ^
+    | uvloop/loop.c:173431:22: note: in expansion of macro ‘__Pyx_PyUnicode_READY’
+    | 173431 |         if (unlikely(__Pyx_PyUnicode_READY(uval)))
+    |        |                      ^~~~~~~~~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__Pyx_PyInt_NeObjC’:
+    | uvloop/loop.c:173582:51: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 173582 |         const digit* digits = ((PyLongObject*)op1)->ob_digit;
+    |        |                                                   ^~
+    | uvloop/loop.c: In function ‘__Pyx__Coroutine_GetAwaitableIter’:
+    | uvloop/loop.c:174938:53: error: ‘PyGenObject’ has no member named ‘gi_code’
+    | 174938 |     if (PyGen_CheckExact(obj) && ((PyGenObject*)obj)->gi_code && ((PyCodeObject *)((PyGenObject*)obj)->gi_code)->co_flags & CO_ITERABLE_COROUTINE) {
+    |        |                                                     ^~
+    | uvloop/loop.c:174938:102: error: ‘PyGenObject’ has no member named ‘gi_code’
+    | 174938 |     if (PyGen_CheckExact(obj) && ((PyGenObject*)obj)->gi_code && ((PyCodeObject *)((PyGenObject*)obj)->gi_code)->co_flags & CO_ITERABLE_COROUTINE) {
+    |        |                                                                                                      ^~
+    | uvloop/loop.c: In function ‘__Pyx_PyInt_EqObjC’:
+    | uvloop/loop.c:175406:51: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 175406 |         const digit* digits = ((PyLongObject*)op1)->ob_digit;
+    |        |                                                   ^~
+    | uvloop/loop.c: In function ‘__Pyx_CLineForTraceback’:
+    | uvloop/loop.c:176334:9: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 176334 |         __PYX_PY_DICT_LOOKUP_IF_MODIFIED(
+    |        |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c:176334:9: warning: ‘ma_version_tag’ is deprecated [-Wdeprecated-declarations]
+    | 176334 |         __PYX_PY_DICT_LOOKUP_IF_MODIFIED(
+    |        |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    | /usr/include/python3.12/cpython/dictobject.h:22:34: note: declared here
+    |    22 |     Py_DEPRECATED(3.12) uint64_t ma_version_tag;
+    |       |                                  ^~~~~~~~~~~~~~
+    | uvloop/loop.c: In function ‘__Pyx_PyInt_As_int’:
+    | uvloop/loop.c:176635:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 176635 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+    |        |                                                     ^~
+    | uvloop/loop.c:176690:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 176690 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+    |        |                                                     ^~
+    | uvloop/loop.c: In function ‘__Pyx_PyInt_As_uint64_t’:
+    | uvloop/loop.c:176831:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 176831 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+    |        |                                                     ^~
+    | uvloop/loop.c:176886:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 176886 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+    |        |                                                     ^~
+    | uvloop/loop.c: In function ‘__Pyx_PyInt_As_long’:
+    | uvloop/loop.c:177065:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 177065 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+    |        |                                                     ^~
+    | uvloop/loop.c:177120:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 177120 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+    |        |                                                     ^~
+    | uvloop/loop.c: In function ‘__Pyx_PyInt_As_unsigned_long’:
+    | uvloop/loop.c:177337:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 177337 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+    |        |                                                     ^~
+    | uvloop/loop.c:177392:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 177392 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+    |        |                                                     ^~
+    | uvloop/loop.c: In function ‘__Pyx_PyInt_As_unsigned_int’:
+    | uvloop/loop.c:177533:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 177533 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+    |        |                                                     ^~
+    | uvloop/loop.c:177588:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 177588 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+    |        |                                                     ^~
+    | uvloop/loop.c: In function ‘__Pyx_PyInt_As_size_t’:
+    | uvloop/loop.c:177805:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 177805 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+    |        |                                                     ^~
+    | uvloop/loop.c:177860:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 177860 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+    |        |                                                     ^~
+    | uvloop/loop.c: In function ‘__Pyx_PyIndex_AsSsize_t’:
+    | uvloop/loop.c:178586:45: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+    | 178586 |     const digit* digits = ((PyLongObject*)b)->ob_digit;
+    |        |                                             ^~
+    | error: command '/usr/bin/x86_64-linux-gnu-gcc' failed with exit code 1
+
+Note: This error originates from the build backend, and is likely not a problem with poetry but one of the following issues with uvloop (0.17.0)
+
+  - not supporting PEP 517 builds
+  - not specifying PEP 517 build requirements correctly
+  - the build requirements are incompatible with your operating system or Python version
+  - the build requirements are missing system dependencies (eg: compilers, libraries, headers).
+
+You can verify this by running pip wheel --no-cache-dir --use-pep517 "uvloop (==0.17.0)".
+

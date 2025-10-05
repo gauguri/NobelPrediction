@@ -8,10 +8,13 @@ ENV PYTHONUNBUFFERED=1
 RUN apt-get update && apt-get install -y build-essential && rm -rf /var/lib/apt/lists/*
 
 COPY pyproject.toml poetry.lock* ./
+# NEW (Poetry 2.x syntax)
 RUN pip install --no-cache-dir poetry && poetry config virtualenvs.create false \
-    && poetry install --no-dev --no-root
+    && poetry install --without dev --no-root
+# (Equivalent alternative:  poetry install --only main --no-root)
 
 COPY app ./app
+COPY storage ./storage
 COPY app/data ./app/data
 
 EXPOSE 8000

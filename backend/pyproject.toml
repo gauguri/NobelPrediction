@@ -13,6 +13,8 @@ uvicorn = { extras = ["standard"], version = "^0.23.2" }
 sqlalchemy = "^2.0.20"
 pandas = "^2.1.1"
 numpy = "^1.26.0"
+greenlet = ">=3,<4"
+uvloop = ">=0.19,<0.20"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.2"
