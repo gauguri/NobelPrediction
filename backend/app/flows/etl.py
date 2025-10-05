@@ -15,6 +15,11 @@ settings = get_settings()
 
 
 @task
+def discover_candidate_seed_files(seed_dir: Path) -> List[Path]:
+    return sorted(seed_dir.glob("*_candidates.json"))
+
+
+@task
 def load_seed_candidates(seed_path: Path) -> List[dict]:
     with seed_path.open("r", encoding="utf-8") as f:
         return json.load(f)
@@ -83,11 +88,31 @@ def run_data_quality(parquet_path: Path) -> dict:
 
 @flow(name="seed_etl")
 def run_seed_etl() -> str:
-    seed_path = settings.data_dir / "seed" / "physics_candidates.json"
-    seed_records = load_seed_candidates(seed_path)
-    upsert_candidates(seed_records)
-    table_path = persist_feature_table(seed_records, settings.data_dir / "staging" / "physics_features.csv")
-    dq_result = run_data_quality(table_path)
-    if not dq_result["success"]:
-        raise ValueError("Data quality checks failed")
-    return f"seed-etl-{datetime.utcnow().isoformat()}"
+    seed_dir = settings.data_dir / "seed"
+    seed_files = discover_candidate_seed_files(seed_dir)
+    if not seed_files:
+        raise FileNotFoundError(f"No seed candidate files found in {seed_dir}")
+
+    processed_fields: List[str] = []
+    for seed_path in seed_files:
+        seed_records = load_seed_candidates(seed_path)
+        if not seed_records:
+            continue
+
+        field_name = seed_records[0]["field"]
+        if any(record["field"] != field_name for record in seed_records):
+            raise ValueError(f"Mixed fields detected in seed file {seed_path}")
+
+        upsert_candidates(seed_records)
+        field_slug = field_name.lower().replace(" ", "_")
+        table_path = persist_feature_table(
+            seed_records,
+            settings.data_dir / "staging" / f"{field_slug}_features.csv",
+        )
+        dq_result = run_data_quality(table_path)
+        if not dq_result["success"]:
+            raise ValueError(f"Data quality checks failed for field {field_name}")
+        processed_fields.append(field_name)
+
+    fields_fragment = ",".join(processed_fields)
+    return f"seed-etl-{datetime.utcnow().isoformat()}::{fields_fragment}"

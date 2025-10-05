@@ -1,0 +1,50 @@
+[
+  {
+    "openalex_id": "C1",
+    "full_name": "Omar Yaghi",
+    "field": "Chemistry",
+    "affiliation": "University of California, Berkeley",
+    "country": "USA",
+    "headshot_url": "https://example.com/omar_yaghi.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 31000,
+      "h_index": 95,
+      "recent_trend": 0.11,
+      "seminal_score": 0.82,
+      "award_count": 6
+    }
+  },
+  {
+    "openalex_id": "C2",
+    "full_name": "Shankar Balasubramanian",
+    "field": "Chemistry",
+    "affiliation": "University of Cambridge",
+    "country": "United Kingdom",
+    "headshot_url": "https://example.com/shankar_balasubramanian.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 28500,
+      "h_index": 88,
+      "recent_trend": 0.13,
+      "seminal_score": 0.79,
+      "award_count": 5
+    }
+  },
+  {
+    "openalex_id": "C3",
+    "full_name": "Jennifer Doudna",
+    "field": "Chemistry",
+    "affiliation": "University of California, Berkeley",
+    "country": "USA",
+    "headshot_url": "https://example.com/jennifer_doudna.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 36000,
+      "h_index": 102,
+      "recent_trend": 0.17,
+      "seminal_score": 0.9,
+      "award_count": 7
+    }
+  }
+]

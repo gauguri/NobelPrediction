@@ -1,0 +1,50 @@
+[
+  {
+    "openalex_id": "E1",
+    "full_name": "Esther Duflo",
+    "field": "Economics",
+    "affiliation": "Massachusetts Institute of Technology",
+    "country": "USA",
+    "headshot_url": "https://example.com/esther_duflo.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 26000,
+      "h_index": 83,
+      "recent_trend": 0.1,
+      "seminal_score": 0.86,
+      "award_count": 6
+    }
+  },
+  {
+    "openalex_id": "E2",
+    "full_name": "Paul Romer",
+    "field": "Economics",
+    "affiliation": "New York University",
+    "country": "USA",
+    "headshot_url": "https://example.com/paul_romer.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 24000,
+      "h_index": 79,
+      "recent_trend": 0.09,
+      "seminal_score": 0.8,
+      "award_count": 5
+    }
+  },
+  {
+    "openalex_id": "E3",
+    "full_name": "David Card",
+    "field": "Economics",
+    "affiliation": "University of California, Berkeley",
+    "country": "USA",
+    "headshot_url": "https://example.com/david_card.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 22000,
+      "h_index": 76,
+      "recent_trend": 0.08,
+      "seminal_score": 0.78,
+      "award_count": 5
+    }
+  }
+]

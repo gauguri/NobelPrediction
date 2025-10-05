@@ -18,7 +18,7 @@ function BacktestPanel({ metrics }: Props) {
       <CardHeader title="Backtest performance" subheader={`${metric.years_covered[0]} - ${metric.years_covered[1]}`} />
       <CardContent>
         <Typography variant="body2" color="text.secondary" gutterBottom>
-          Historical hit rate and calibration for the Physics shortlist.
+          Historical hit rate and calibration for the {metric.field} shortlist.
         </Typography>
         <Plot
           data={[

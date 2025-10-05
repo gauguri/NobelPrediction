@@ -24,6 +24,11 @@ FEATURE_COLUMNS = [
 
 
 @task
+def discover_feature_tables(staging_dir: Path) -> List[Path]:
+    return sorted(staging_dir.glob("*_features.csv"))
+
+
+@task
 def load_feature_table(path: Path) -> pd.DataFrame:
     return pd.read_csv(path)
 
@@ -136,15 +141,35 @@ def compute_simple_shap(prediction_record: dict) -> List[dict]:
 
 @flow(name="baseline_model_training")
 def run_model_training() -> dict:
-    staging_path = settings.data_dir / "staging" / "physics_features.csv"
-    df = load_feature_table(staging_path)
-    model, augmented_df = train_baseline_model(df)
-    model_path = settings.model_dir / "physics" / "baseline_model.joblib"
-    persist_model(model, model_path)
-    predictions = generate_predictions(model, augmented_df, "one_year")
-    persist_predictions(predictions)
+    staging_dir = settings.data_dir / "staging"
+    feature_tables = discover_feature_tables(staging_dir)
+    if not feature_tables:
+        raise FileNotFoundError(f"No feature tables found in {staging_dir}")
+
+    all_predictions: List[dict] = []
+    model_paths: dict[str, str] = {}
+
+    for table_path in feature_tables:
+        df = load_feature_table(table_path)
+        if df.empty:
+            continue
+
+        field_values = df["field"].unique()
+        if len(field_values) != 1:
+            raise ValueError(f"Feature table {table_path} contains multiple fields: {field_values}")
+
+        field_name = field_values[0]
+        model, augmented_df = train_baseline_model(df)
+        field_slug = field_name.lower().replace(" ", "_")
+        model_path = settings.model_dir / field_slug / "baseline_model.joblib"
+        model_paths[field_name] = persist_model(model, model_path)
+        predictions = generate_predictions(model, augmented_df, "one_year")
+        all_predictions.extend(predictions)
+
+    persist_predictions(all_predictions)
+
     return {
-        "model_path": str(model_path),
-        "prediction_count": len(predictions),
+        "model_paths": model_paths,
+        "prediction_count": len(all_predictions),
         "run_id": f"model-{datetime.utcnow().isoformat()}",
     }

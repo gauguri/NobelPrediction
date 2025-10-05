@@ -1,0 +1,50 @@
+[
+  {
+    "openalex_id": "L1",
+    "full_name": "Ngũgĩ wa Thiong'o",
+    "field": "Literature",
+    "affiliation": "Independent",
+    "country": "Kenya",
+    "headshot_url": "https://example.com/ngugi_wa_thiongo.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 12000,
+      "h_index": 45,
+      "recent_trend": 0.07,
+      "seminal_score": 0.76,
+      "award_count": 4
+    }
+  },
+  {
+    "openalex_id": "L2",
+    "full_name": "Margaret Atwood",
+    "field": "Literature",
+    "affiliation": "Independent",
+    "country": "Canada",
+    "headshot_url": "https://example.com/margaret_atwood.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 9800,
+      "h_index": 39,
+      "recent_trend": 0.06,
+      "seminal_score": 0.72,
+      "award_count": 5
+    }
+  },
+  {
+    "openalex_id": "L3",
+    "full_name": "Haruki Murakami",
+    "field": "Literature",
+    "affiliation": "Independent",
+    "country": "Japan",
+    "headshot_url": "https://example.com/haruki_murakami.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 10500,
+      "h_index": 41,
+      "recent_trend": 0.08,
+      "seminal_score": 0.78,
+      "award_count": 4
+    }
+  }
+]
