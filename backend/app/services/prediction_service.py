@@ -25,7 +25,11 @@ class PredictionService:
             query = (
                 session.query(Prediction, Candidate)
                 .join(Candidate, Candidate.id == Prediction.candidate_id)
-                .filter(Candidate.field == field, Prediction.horizon == horizon)
+                .filter(
+                    Candidate.field == field,
+                    Candidate.is_laureate.is_(False),
+                    Prediction.horizon == horizon,
+                )
                 .order_by(Prediction.probability.desc())
                 .limit(20)
             )

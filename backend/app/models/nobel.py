@@ -1,6 +1,6 @@
 from datetime import date
 
-from sqlalchemy import Column, Date, Float, ForeignKey, Integer, String
+from sqlalchemy import Boolean, Column, Date, Float, ForeignKey, Integer, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.models.base import Base
@@ -16,6 +16,7 @@ class Candidate(Base):
     affiliation: Mapped[str] = mapped_column(String, nullable=False)
     country: Mapped[str] = mapped_column(String, nullable=True)
     headshot_url: Mapped[str] = mapped_column(String, nullable=True)
+    is_laureate: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
 
     feature_snapshots: Mapped[list["FeatureSnapshot"]] = relationship(back_populates="candidate")
     predictions: Mapped[list["Prediction"]] = relationship(back_populates="candidate")

@@ -95,6 +95,8 @@ def persist_predictions(predictions: List[dict]) -> None:
             candidate = candidate_map.get(record["openalex_id"])
             if candidate is None:
                 continue
+            if candidate.is_laureate:
+                continue
             prediction = Prediction(
                 candidate_id=candidate.id,
                 year=record["year"],

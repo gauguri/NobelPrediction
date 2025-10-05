@@ -1,6 +1,8 @@
 import shutil
 from pathlib import Path
 
+from sqlalchemy import inspect
+
 from app.core.config import get_settings
 from app.core.database import engine
 from app.models.base import Base
@@ -10,6 +12,11 @@ settings = get_settings()
 
 
 def bootstrap_state() -> None:
+    inspector = inspect(engine)
+    if inspector.has_table("candidates"):
+        columns = {column["name"] for column in inspector.get_columns("candidates")}
+        if "is_laureate" not in columns:
+            Base.metadata.drop_all(bind=engine)
     Base.metadata.create_all(bind=engine)
     seed_source = Path(__file__).resolve().parents[1] / "data" / "seed"
     seed_target = settings.data_dir / "seed"
