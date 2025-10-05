@@ -6,7 +6,7 @@ import CandidateCard from './components/CandidateCard'
 import BacktestPanel from './components/BacktestPanel'
 import ProvenanceDrawer from './components/ProvenanceDrawer'
 
-const fields = ['Physics']
+const fields = ['Physics', 'Medicine', 'Chemistry', 'Peace', 'Economics', 'Literature']
 const horizons = [
   { label: 'This year', value: 'one_year' },
   { label: '3-year horizon', value: 'three_year' }

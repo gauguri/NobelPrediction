@@ -5,5 +5,40 @@
     "auc_pr": 0.41,
     "brier_score": 0.19,
     "years_covered": [2000, 2020]
+  },
+  {
+    "field": "Chemistry",
+    "hit_at_10": 0.58,
+    "auc_pr": 0.38,
+    "brier_score": 0.2,
+    "years_covered": [2001, 2020]
+  },
+  {
+    "field": "Medicine",
+    "hit_at_10": 0.64,
+    "auc_pr": 0.43,
+    "brier_score": 0.18,
+    "years_covered": [2000, 2020]
+  },
+  {
+    "field": "Literature",
+    "hit_at_10": 0.45,
+    "auc_pr": 0.31,
+    "brier_score": 0.24,
+    "years_covered": [1998, 2020]
+  },
+  {
+    "field": "Peace",
+    "hit_at_10": 0.5,
+    "auc_pr": 0.35,
+    "brier_score": 0.22,
+    "years_covered": [1995, 2020]
+  },
+  {
+    "field": "Economics",
+    "hit_at_10": 0.6,
+    "auc_pr": 0.4,
+    "brier_score": 0.19,
+    "years_covered": [1999, 2020]
   }
 ]

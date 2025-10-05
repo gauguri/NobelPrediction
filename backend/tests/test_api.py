@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 
+import pytest
 from fastapi.testclient import TestClient
 
 from app.main import app
@@ -23,8 +24,14 @@ def test_health():
     assert response.status_code == 200
 
 
-def test_shortlist_endpoint():
-    response = client.get("/api/v1/predictions/shortlist", params={"field": "Physics", "horizon": "one_year"})
+@pytest.mark.parametrize(
+    "field",
+    ["Physics", "Chemistry", "Medicine", "Literature", "Peace", "Economics"],
+)
+def test_shortlist_endpoint(field):
+    response = client.get(
+        "/api/v1/predictions/shortlist", params={"field": field, "horizon": "one_year"}
+    )
     assert response.status_code == 200
     payload = response.json()
     assert isinstance(payload, list)

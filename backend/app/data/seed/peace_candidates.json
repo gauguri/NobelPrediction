@@ -1,0 +1,50 @@
+[
+  {
+    "openalex_id": "P1",
+    "full_name": "World Food Programme",
+    "field": "Peace",
+    "affiliation": "United Nations",
+    "country": "International",
+    "headshot_url": "https://example.com/world_food_programme.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 8000,
+      "h_index": 30,
+      "recent_trend": 0.12,
+      "seminal_score": 0.7,
+      "award_count": 5
+    }
+  },
+  {
+    "openalex_id": "P2",
+    "full_name": "Doctors Without Borders",
+    "field": "Peace",
+    "affiliation": "Médecins Sans Frontières",
+    "country": "International",
+    "headshot_url": "https://example.com/doctors_without_borders.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 9200,
+      "h_index": 34,
+      "recent_trend": 0.14,
+      "seminal_score": 0.74,
+      "award_count": 6
+    }
+  },
+  {
+    "openalex_id": "P3",
+    "full_name": "Greta Thunberg",
+    "field": "Peace",
+    "affiliation": "Fridays for Future",
+    "country": "Sweden",
+    "headshot_url": "https://example.com/greta_thunberg.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 6500,
+      "h_index": 24,
+      "recent_trend": 0.2,
+      "seminal_score": 0.81,
+      "award_count": 4
+    }
+  }
+]

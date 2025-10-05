@@ -1,0 +1,50 @@
+[
+  {
+    "openalex_id": "M1",
+    "full_name": "Katalin Karikó",
+    "field": "Medicine",
+    "affiliation": "University of Szeged",
+    "country": "Hungary",
+    "headshot_url": "https://example.com/katalin_kariko.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 29500,
+      "h_index": 86,
+      "recent_trend": 0.19,
+      "seminal_score": 0.93,
+      "award_count": 8
+    }
+  },
+  {
+    "openalex_id": "M2",
+    "full_name": "Drew Weissman",
+    "field": "Medicine",
+    "affiliation": "University of Pennsylvania",
+    "country": "USA",
+    "headshot_url": "https://example.com/drew_weissman.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 27000,
+      "h_index": 82,
+      "recent_trend": 0.16,
+      "seminal_score": 0.87,
+      "award_count": 7
+    }
+  },
+  {
+    "openalex_id": "M3",
+    "full_name": "Emmanuelle Charpentier",
+    "field": "Medicine",
+    "affiliation": "Max Planck Unit for the Science of Pathogens",
+    "country": "Germany",
+    "headshot_url": "https://example.com/emmanuelle_charpentier.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 25000,
+      "h_index": 78,
+      "recent_trend": 0.14,
+      "seminal_score": 0.84,
+      "award_count": 6
+    }
+  }
+]
