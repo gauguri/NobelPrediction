@@ -1,9 +1,22 @@
+from typing import Dict, TypedDict
+
 from fastapi import APIRouter
 
 from app.services.training_service import TrainingService
 
 router = APIRouter()
 service = TrainingService()
+
+
+class ModelTrainingDetails(TypedDict):
+    model_paths: Dict[str, str]
+    prediction_count: int
+    run_id: str
+
+
+class TrainModelResponse(TypedDict):
+    status: str
+    details: ModelTrainingDetails
 
 
 @router.post("/etl")
@@ -13,6 +26,6 @@ def run_etl() -> dict[str, str]:
 
 
 @router.post("/model")
-def train_model() -> dict[str, str]:
+def train_model() -> TrainModelResponse:
     model_info = service.train_models()
     return {"status": "trained", "details": model_info}
