@@ -38,6 +38,7 @@ def upsert_candidates(records: List[dict]) -> None:
                     affiliation=record["affiliation"],
                     country=record.get("country"),
                     headshot_url=record.get("headshot_url"),
+                    is_laureate=record.get("is_laureate", False),
                 )
                 session.add(candidate)
                 session.flush()
@@ -47,6 +48,7 @@ def upsert_candidates(records: List[dict]) -> None:
                 candidate.affiliation = record["affiliation"]
                 candidate.country = record.get("country")
                 candidate.headshot_url = record.get("headshot_url")
+                candidate.is_laureate = record.get("is_laureate", False)
 
             features = record["features"]
             snapshot = (
@@ -72,6 +74,7 @@ def persist_feature_table(records: List[dict], output_path: Path) -> Path:
         entry = {
             "openalex_id": record["openalex_id"],
             "field": record["field"],
+            "is_laureate": record.get("is_laureate", False),
             **record["features"],
         }
         rows.append(entry)

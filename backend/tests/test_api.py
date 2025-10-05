@@ -39,6 +39,16 @@ def test_shortlist_endpoint(field):
     assert payload[0]["candidate_name"]
 
 
+def test_shortlist_excludes_laureates():
+    response = client.get(
+        "/api/v1/predictions/shortlist", params={"field": "Physics", "horizon": "one_year"}
+    )
+    assert response.status_code == 200
+    payload = response.json()
+    laureates = [entry for entry in payload if entry["candidate_name"] == "Hiroshi Amano"]
+    assert not laureates
+
+
 def test_reports_generation(tmp_path):
     response = client.get("/api/v1/reports/shortlist.csv", params={"field": "Physics", "horizon": "one_year"})
     assert response.status_code == 200
