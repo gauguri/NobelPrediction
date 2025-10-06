@@ -13,6 +13,7 @@ RUN pip install --no-cache-dir poetry && poetry config virtualenvs.create false 
     && poetry install --without dev --no-root
 # (Equivalent alternative:  poetry install --only main --no-root)
 
+COPY sitecustomize.py ./
 COPY app ./app
 COPY storage ./storage
 COPY app/data ./app/data
