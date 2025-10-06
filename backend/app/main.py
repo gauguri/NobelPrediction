@@ -1,3 +1,5 @@
+import sitecustomize  # noqa: F401  # Ensure environment patches are applied before other imports
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 

@@ -1,7 +1,7 @@
 [
   {
     "openalex_id": "M1",
-    "full_name": "Katalin Karikó",
+    "full_name": "Katalin Karik\u00f3",
     "field": "Medicine",
     "affiliation": "University of Szeged",
     "country": "Hungary",
@@ -13,7 +13,8 @@
       "recent_trend": 0.19,
       "seminal_score": 0.93,
       "award_count": 8
-    }
+    },
+    "is_laureate": true
   },
   {
     "openalex_id": "M2",
@@ -29,7 +30,8 @@
       "recent_trend": 0.16,
       "seminal_score": 0.87,
       "award_count": 7
-    }
+    },
+    "is_laureate": true
   },
   {
     "openalex_id": "M3",
@@ -45,6 +47,23 @@
       "recent_trend": 0.14,
       "seminal_score": 0.84,
       "award_count": 6
+    },
+    "is_laureate": true
+  },
+  {
+    "openalex_id": "M4",
+    "full_name": "Bonnie Bassler",
+    "field": "Medicine",
+    "affiliation": "Princeton University",
+    "country": "USA",
+    "headshot_url": "https://example.com/bonnie_bassler.jpg",
+    "features": {
+      "as_of_year": 2024,
+      "total_citations": 18500,
+      "h_index": 72,
+      "recent_trend": 0.11,
+      "seminal_score": 0.77,
+      "award_count": 5
     }
   }
 ]
