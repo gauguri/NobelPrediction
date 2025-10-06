@@ -1,3 +1,5 @@
+import sitecustomize  # noqa: F401
+
 import pytest
 from fastapi.testclient import TestClient
 
@@ -34,14 +36,24 @@ def test_shortlist_endpoint(client: TestClient, field: str):
     assert payload[0]["candidate_name"]
 
 
-def test_shortlist_excludes_laureates(client: TestClient):
+@pytest.mark.parametrize(
+    "field,laureate",
+    [
+        ("Physics", "Hiroshi Amano"),
+        ("Chemistry", "Jennifer Doudna"),
+        ("Medicine", "Katalin Karikó"),
+        ("Peace", "World Food Programme"),
+        ("Economics", "Esther Duflo"),
+    ],
+)
+def test_shortlist_excludes_laureates(client: TestClient, field: str, laureate: str):
     response = client.get(
-        "/api/v1/predictions/shortlist", params={"field": "Physics", "horizon": "one_year"}
+        "/api/v1/predictions/shortlist", params={"field": field, "horizon": "one_year"}
     )
     assert response.status_code == 200
     payload = response.json()
-    laureates = [entry for entry in payload if entry["candidate_name"] == "Hiroshi Amano"]
-    assert not laureates
+    disallowed = [entry for entry in payload if entry["candidate_name"] == laureate]
+    assert not disallowed, f"{laureate} should not appear in shortlist for {field}"
 
 
 def test_reports_generation(client: TestClient, tmp_path):
